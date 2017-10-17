@@ -1,0 +1,14 @@
+[user]
+	name = Shambhu Shrestha
+	email = shambhu.shrestha@<domain>
+[diff]
+	tool = gvimdiff
+[difftool]
+	prompt = false
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	last = log -1 HEAD
+	stat = log --stat
