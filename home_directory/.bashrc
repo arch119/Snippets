@@ -27,7 +27,6 @@ alias cert-verify='openssl verify -CAfile' #needs 2 args - CAcert (or chain cert
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias fw="NODE_PATH=/usr/local/lib/node_modules/ node ~/dev/utils/fs_watch.js"
 
-k
 de(){
 	docker exec -it $1 /bin/bash
 }
