@@ -19,6 +19,7 @@ pkg-config
 python3
 rbenv
 readline
+ripgrep
 ruby-build
 sqlite
 tmux
