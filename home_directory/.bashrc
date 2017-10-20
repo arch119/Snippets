@@ -41,3 +41,13 @@ del_branch()
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g '!{.git,node_modules}/*' 2> /dev/null'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 bind -x '"\C-p": vim $(fzf);'
+
+
+fno(){
+	if [ $# -lt 1 ]; then
+		echo "Usage: fno <pattern>"
+		return 1
+	fi
+	local file=$(rg --hidden $1 | fzf | cut -f1 -d:)
+	[ -z $file ] || vim $file
+}
